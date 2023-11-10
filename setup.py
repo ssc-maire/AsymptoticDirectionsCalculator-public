@@ -27,6 +27,8 @@ setup(
     long_description_content_type='text/markdown',
     author='Chris S. W. Davis',
     author_email='ChrisSWDavis@gmail.com',
+    url='https://github.com/ssc-maire/AsymptoticDirectionsCalculator-public',
+    keywords = 'space physics earth asymptotic trajectory geomagnetic rigidity magnetocosmics',
     license='GNU General Public License v3.0',
     install_requires=install_requires,
     setup_requires=['pytest-runner','wheel'],
