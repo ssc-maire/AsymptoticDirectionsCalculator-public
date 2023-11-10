@@ -6,7 +6,53 @@ A Python toolkit for calculating both cut-off rigidities and asymptotic directio
 
 This toolkit currently only runs the Tsyganenko 1989 model, and the IGRF model to supply magnetocosmics with the current status of Earth's magnetic field, although the model could be quite easily extended to use other models already contained within magnetocosmics in the future. TSY89 and IGRF only require a particular date and time, as well as the current value of Kp index (a single number that describes the current conditions of Earth's magnetic field) to describe Earth's magnetic field at a given time. Note that this toolkit may need to be updated in 2025 with the latest values for the IGRF model of Earth's geomagnetic (internal field), otherwise calculations may fail. 
 
-**To use this package you must have a version of magnetocosmics installed, such that magnetocosmics can be run using the following**
+**To use this package you must have a version of magnetocosmics installed, such that magnetocosmics can be run by typing 'magnetocosmics' the terminal, i.e. typing:**
+
+```
+$ magnetocosmics
+```
+outputs something like the following:
+```
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-02 [MT]   (25-May-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+/h n m 1900.0 1905.0 1910.0 1915.0 1920.0 1925.0 1930.0 1935.0 1940.0 1945.0 1950.0 1955.0 1960.0 1965.0 1970.0 1975.0 1980.0 1985.0 1990.0 1995.0   2000.0    2005.0    2010.0    2015.0   2020.0    SV
+mmm1900
+Nyear 25
+1900
+Nyear 25
+
+...
+
+g       8       8
+h       8       8
+g       9       0
+0.0     0       -999
+XGSE in GEI (0.193332,-0.900173,-0.39027)
+(0.0573796,-0.172205,0.983389)
+-19.4809
+Selected index20
+XGSE in GEI (0.17509,-0.903305,-0.391643)
+(0.0590434,-0.175608,0.982688)
+-25.9091
+Test93
+Test97
+Test
+G4CashKarpRKF45 is called
+```
 
 ## Installation
 
