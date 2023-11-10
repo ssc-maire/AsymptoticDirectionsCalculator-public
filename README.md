@@ -60,7 +60,13 @@ While this package is new, it fundamentally relies on Magnetocosmics, which is n
 
 ## Installation
 
-To install this toolkit from this Github repository you can first clone the repository, and then from the cloned respository, run
+To install this toolkit through the normal [PyPi method](https://pypi.org/project/AsympDirsCalculator/), you can simply run
+
+```
+sudo pip install AsympDirsCalculator
+```
+
+Alternatively, to install this toolkit directly from this Github repository you can first clone the repository, and then from the cloned respository, run
 
 ```
 sudo pip3 install .
