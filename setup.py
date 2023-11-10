@@ -21,7 +21,7 @@ setup(
     package_data={"AsympDirsCalculator":["magcos_running_scripts/runNoRewriteMAGCOSsimulation.sh",
                                          "magcos_running_scripts/AsymptoticDirection.g4mac",
                                          ]},
-    version='1.0.0',
+    version='1.0.1',
     description='Python library containing tools for calculating asymptotic directions and vertical cut-off rigidities.',
     long_description=long_description,
     long_description_content_type='text/markdown',
