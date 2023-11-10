@@ -245,5 +245,3 @@ Here, the outputted vertical cut-off rigidity columns refer to
 ## References
 
 Desorgher, L. MAGNETOCOSMICS Users Manual. (University of Bern, 2006)
-
-Larsen, Nicholas, A. Mishev, and I. Usoskin. "Development of a Modern Open Source Magnetospheric Computation Tool." Proceeding of Science (2022).
