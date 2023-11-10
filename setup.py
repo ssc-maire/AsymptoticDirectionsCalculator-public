@@ -27,7 +27,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Chris S. W. Davis',
     author_email='ChrisSWDavis@gmail.com',
-    license='MIT',
+    license='GNU General Public License v3.0',
     install_requires=install_requires,
     setup_requires=['pytest-runner','wheel'],
     tests_require=['pytest'],
