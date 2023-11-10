@@ -54,7 +54,7 @@ Test
 G4CashKarpRKF45 is called
 ```
 
-Feel free to contribute to this package, the package is intended for usage and potential modification by the community. While this package is new, it fundamentally relies on Magnetocosmics, which is no longer maintained, and it is therefore likely that the community will eventually create a successor for Magnetocosmics. One attempt to do this is the [OTSO software](https://github.com/NLarsen15/OTSO), which is also designed to be open source and community oriented. We hope that in the future, OTSO may succeed this software, or even that this Python wrapper could be integrated with OTSO. 
+Feel free to contribute to this package through forks and pull requests, the package is intended for usage and potential modification by the community. While this package is new, it fundamentally relies on Magnetocosmics, which is no longer maintained, and it is therefore likely that the community will eventually create a successor for Magnetocosmics. One attempt to do this is the [OTSO software](https://github.com/NLarsen15/OTSO), which is also designed to be open-source and community oriented. We hope that in the future, OTSO may succeed this software, or even that this Python wrapper could be integrated with OTSO. 
 
 ## Installation
 
