@@ -1,0 +1,94 @@
+################################################################
+#MAGNETOCOSMICS Macro file for computing asymptotic directions #
+#and cutoff rigidities for  a given observing  position and    #
+#direction of incidence                                        #
+################################################################
+
+#
+#for visualisation used /tracking/storeTrajectory 1 
+#
+#
+
+/tracking/storeTrajectory 0
+/tracking/verbose 0
+/run/verbose 1
+/control/verbose 1
+
+#
+#For the visualisation use a smaller maximum step length
+#
+
+/MAGCOS/USERLIMIT/SetMaxStepLength .1 Re
+/MAGCOS/USERLIMIT/SetMaxTrajectoryLength 100. Re
+
+#
+#Integration parameter
+#
+
+
+/MAGCOS/INTEGRATION/SetPrecision 1e-6 
+/MAGCOS/INTEGRATION/SetG4MaxStep 1e-1 re
+/MAGCOS/INTEGRATION/SetBSMaxStep 1. re
+/MAGCOS/INTEGRATION/SetDeltaIntersection 1e-2 re
+
+#
+#Set the magnetic field model to IGRF without external field 
+#The field is computed on the 12th december 1989 at 10 hour .
+#
+/MAGCOS/BFIELD/SetGeomagneticFieldModel IGRF
+#/MAGCOS/BFIELD/SetShiftedGeodipoleFromIGRF
+/MAGCOS/BFIELD/SetExternalFieldModel TSY89
+#/MAGCOS/BFIELD/SetExternalFieldModel TSY2005
+
+
+#
+#Definition of particle type, observing position and incident direction  
+#
+
+/gps/particle proton
+
+
+#jfrau_joch
+#/MAGCOS/SOURCE/SetPosition GEOID 20. km 46.55 7.98 degree
+#/MAGCOS/SOURCE/SetPosition GEODETIC 100. km 65.05 25.47 degree #altitude latitude longitude #OULU position
+#/MAGCOS/SOURCE/SetPosition GEOID 100. km 65.05 25.47 degree #altitude latitude longitude #OULU position
+#/MAGCOS/SOURCE/SetDirection GEOID 0. 0. degree
+#/MAGCOS/SOURCE/SetDirection GEODETIC 0. 0. degree
+
+#
+#Definition of the diffrent rigiditise for which particle trajectory will
+#computed
+#
+
+
+/MAGCOS/RIGIDITYVECTOR/Reset
+#/MAGCOS/RIGIDITYVECTOR/AddValues 20. -0.02 999
+#/MAGCOS/RIGIDITYVECTOR/AddValues 20. -1 19
+#/MAGCOS/RIGIDITYVECTOR/AddValues 2. -1 1
+/MAGCOS/RIGIDITYVECTOR/AddValues 2. -1 2
+
+
+#/MAGCOS/BFIELD/SetStartDate 1990 7  21 10 1 0 
+#/MAGCOS/SCENARIO/ComputeAsymptoticDirections jungfraujoch_station.out
+
+#/MAGCOS/BFIELD/SetIopt 7
+
+/MAGCOS/BFIELD/SetStartDate 2010 6 1 0 0 0
+
+#/MAGCOS/SOURCE/SetDirection GEOID 0. 0. degree
+
+REPLACE_THIS_LINE_WITH_FULL_LOOP_COMMANDS
+
+#/MAGCOS/SOURCE/SetDirection GEOID REPLACEWITHZENITHANGLE REPLACEWITHAZIMUTHANGLE degree
+#/MAGCOS/SCENARIO/ComputeAsymptoticDirections AsymptoticDirectionAngle_REPLACEWITHZENITHANGLE_REPLACEWITHAZIMUTHANGLE.out
+
+#
+#For visualisation uncomment the following lines
+#
+#/tracking/storeTrajectory 1
+#/MAGCOS/DRAW/DrawTrajectory true
+#/MAGCOS/DRAW/DrawPoints false
+#/MAGCOS/DRAW/SetColour 1 0 0
+#/MAGCOS/DRAW/SetCoordinateSystem GEO
+
+
