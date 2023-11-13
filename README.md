@@ -1,6 +1,6 @@
 # AsymptoticDirectionsCalculator
 
-**N.B. Currently this tool only runs on Linux-based machines (not on Windows)**
+**N.B. Currently this tool only runs on Linux-based machines (if you are a Windows user, you must use (Windows Subsystem for Linux)[https://ubuntu.com/wsl] or a virtual machine with Linux to install and run this tool)**
 
 A Python toolkit for calculating both cut-off rigidities and asymptotic directions from any latitude and longitude on Earth's surface. This toolkit essentially acts as a Python wrapper for the Geant4-based magnetocosmics Monte Carlo software, which is popular within scientific fields that frequently need to perform calculations of particle trajectories in Earth's magnetic field. Magnetocosmics here calculates asymptotic directions using the commonly used method of backtracing the trajectory of a particle with a particular magnetic rigidity from a particular location on Earth's surface.
 
