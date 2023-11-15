@@ -6,7 +6,7 @@ import shutil
 try:
     assert not (shutil.which("magnetocosmics") is None)
 except AssertionError:
-    raise Exception("ERROR: AsympDirsCalculator currently requires magnetocosmics to be installed, such that the command 'magnetocosmics' can be run in terminal. If you have installed a copy of magnetocosmics, please check to see ensure that your paths have been set correctly, and that magneto-env.sh has been sourced correctly. If you are having issues or suspect there might be a bug, please feel free to report it at https://github.com/ssc-maire/AsymptoticDirectionsCalculator-public/issues , and I will try to respond to your issue as soon as I'm able to.")
+    print("ERROR: AsympDirsCalculator currently requires magnetocosmics to be installed, such that the command 'magnetocosmics' can be run in terminal. All AsympDirsCalculator runs will currently fail until magnetocosmics is installed. If you have installed a copy of magnetocosmics, please check to see ensure that your paths have been set correctly, and that magneto-env.sh has been sourced correctly. If you are having issues or suspect there might be a bug, please feel free to report it at https://github.com/ssc-maire/AsymptoticDirectionsCalculator-public/issues , and I will try to respond to your issue as soon as I'm able to.")
 
 from .MAGNETOCOSMICSrunManager import MAGNETOCOSMICSrunManager
 
