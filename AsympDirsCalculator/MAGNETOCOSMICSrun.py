@@ -48,7 +48,11 @@ class MAGNETOCOSMICSrun():
 
         macroFileGenerator.generateMacro(array_of_lats_and_longs, array_of_zeniths_and_azimuths)
 
-        subprocess.run(_magnetocosmicsShellScriptPath)
+        try:
+            magnetocosmics_subprocess_run = subprocess.run(_magnetocosmicsShellScriptPath)
+            assert magnetocosmics_subprocess_run.returncode == 0
+        except:
+            raise Exception("ERROR: running magnetocosmics and processing output files failed, please check the above error messages to debug what might have gone wrong.")
 
         os.chdir(originalDirectory)
 
