@@ -1,0 +1,2 @@
+include AsympDirsCalculator/magcos_running_scripts/runNoRewriteMAGCOSsimulation.sh 
+include AsympDirsCalculator/magcos_running_scripts/AsymptoticDirection.g4mac
