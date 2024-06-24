@@ -1,13 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below. The homepage for this software is https://github.com/ssc-maire/AsymptoticDirectionsCalculator-public"
 authors:
-- family-names: "Davis"
-  given-names: "Christopher Stephen William"
-  orcid: "https://orcid.org/0000-0002-8096-1383"
-  affiliation: "University of Surrey"
-  alias: "ChrisSWDavis"
-  email: "ChrisSWDavis@gmail.com"
-  website: "https://www.researchgate.net/profile/Chris-Davis-13"
+- alias: "Space Environment and Protection Group, University of Surrey"
 title: "AsymptoticDirectionsCalculator-public"
 type: software
 version: 1.0.10
