@@ -28,7 +28,7 @@ setup(
     author='Space Environment and Protection Group, University of Surrey',
     url='https://github.com/ssc-maire/AsymptoticDirectionsCalculator-public',
     keywords = 'space physics earth asymptotic trajectory geomagnetic rigidity magnetocosmics',
-    license='GNU General Public License v3.0',
+    license='CC BY_NC_SA 4.0',
     install_requires= ['numpy>=1.21.6',
                         'pandas>=1.3.5',
                         'setuptools>=45.2.0',
