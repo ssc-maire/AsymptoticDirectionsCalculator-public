@@ -111,7 +111,7 @@ def finishPosMomAngleCalculation(thetaOne, thetaTwo, phiOne, phiTwo):
 
 def readOutputAngleFile(filePath):
     outputDF = pd.read_csv(filePath, 
-            delimiter="\s+",
+            delimiter=r"\s+",
             index_col=False,
             skipfooter=1,
             header=None, 
@@ -174,7 +174,7 @@ def readNewOutputAngleFile(filePath):
     #print(filePath)
     
     outputDF = pd.read_csv(filePath, 
-            delimiter="\s+",
+            delimiter=r"\s+",
             index_col=False,
             skipfooter=1,
             header=None, 
